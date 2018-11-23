@@ -1,0 +1,635 @@
+	SEND_EMAIL_ON_ERROR=1
+2018-11-23 10:21:05,966 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.activation.response, fields=[[0]->[status, 1] [1]->[errorMessage, 7] ]]
+2018-11-23 10:21:05,967 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.properties.response, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] [4]->[configServerIsActive, 6] ]]
+2018-11-23 10:21:05,967 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.dependency.response, fields=[[0]->[processType, 7] [1]->[processLocalization, 7] [2]->[processMode, 7] [3]->[processDependencies, 29] [4]->[alias, 7] [5]->[errorMessage, 7] [6]->[configServerIsActive, 6] [7]->[processIsEnabled, 6] ]]
+2018-11-23 10:21:05,969 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.admin.response, fields=[[0]->[errorMessage, 7] [1]->[isForcePossible, 6] [2]->[configServerIsActive, 6] ]]
+2018-11-23 10:21:05,969 [INFO ] [main           ] Msg: registerType: MsgDesc[CONF.RES, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] ]]
+2018-11-23 10:21:08,126 [ERROR] [MAIN           ] BrokerClient: Unable to register com.ingalys.imc.svc.safety.hspersist.SafetyBaseRegistrator
+2018-11-23 10:21:08,177 [INFO ] [oreRegister-2-1] Msg: registerType: MsgDesc[_PST.SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 12] ]]
+2018-11-23 10:21:08,177 [INFO ] [oreRegister-2-1] Msg: registerType: MsgDesc[_PST.OPTMIZED_SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 84] ]]
+2018-11-23 10:21:11,506 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[STATUS, fields=[[0]->[productId, 7] [1]->[scenarioId, 7] [2]->[qtyOnMarket, 1] [3]->[priceOnMarket, 5] [4]->[qtySent, 1] [5]->[priceSent, 5] [6]->[scenarioStatus, 1] [7]->[nbMsgSent, 1] [8]->[lastAction, 1] [9]->[type, 2] [10]->[lastErrorMessage, 7] [11]->[timestamp, 3] [12]->[priceInternal, 5] ]]
+2018-11-23 10:21:12,111 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MM_UKO_A, fields=[[0]->[success, 6] [1]->[errorMsg, 7] ]]
+2018-11-23 10:21:12,474 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[EXEC_DIFF_SERVICE_RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedTrades, 27] ]]
+2018-11-23 10:21:12,604 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MPV_REFRESH_ERROR, fields=[[0]->[errorDesc, 7] ]]
+2018-11-23 10:21:17,220 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], settings={name=marketoncloserulesource, alias=MarketOnCloseRuleSource, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,220 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], type=null, alias=MarketOnCloseRuleSource)
+2018-11-23 10:21:17,225 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotter, alias=RFQBlotter, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,225 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotter)
+2018-11-23 10:21:17,230 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], settings={name=externalpricingconfiguration, alias=ExternalPricingConfiguration, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,230 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], type=null, alias=ExternalPricingConfiguration)
+2018-11-23 10:21:17,251 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], settings={name=pendingexecution, alias=PendingExecution, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,252 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], type=null, alias=PendingExecution)
+2018-11-23 10:21:17,255 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotterhistoric, alias=RFQBlotterHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,256 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotterHistoric)
+2018-11-23 10:21:17,258 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebooking, alias=TradeBooking, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,258 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBooking)
+2018-11-23 10:21:17,263 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebookinghistoric, alias=TradeBookingHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,263 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBookingHistoric)
+2018-11-23 10:21:17,267 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], settings={name=scheduler, alias=Scheduler, useWeakRecordStore=false, hidden=true})
+2018-11-23 10:21:17,268 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], type=null, alias=Scheduler)
+2018-11-23 10:21:19,879 [ERROR] [MAIN           ] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:19,881 [INFO ] [MAIN           ] ConnectInfo: Connection of 'omx' failed: cause=com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD (error=0)
+2018-11-23 10:21:19,889 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:20,358 [ERROR] [MAIN           ] CONNECTION-jse: jse (imc:quanthouse): IMCException: No instrument loaded by QuantHouseSession@4647fa9c(jse)
+2018-11-23 10:21:20,358 [INFO ] [MAIN           ] ConnectInfo: Connection of 'jse' failed: cause=com.ingalys.imc.IMCException: No instrument loaded by QuantHouseSession@4647fa9c(jse) (error=0)
+2018-11-23 10:21:20,497 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): IMCException: No instrument loaded by QuantHouseSession@4647fa9c(jse)
+2018-11-23 10:21:22,839 [INFO ] [MAIN           ] AutomaticIndexer: Turning off WARN and ERROR logs on this logger (got 100 in 10ms, min delay = 1000ms)
+2018-11-23 10:21:24,833 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:25,122 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[_PST.PUT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedRows, 12] [3]->[failedMessages, 12] ]]
+2018-11-23 10:21:25,471 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:29,823 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:30,466 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:34,825 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:35,459 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:39,808 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:40,449 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:44,800 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:45,441 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:49,792 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:50,432 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:54,787 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:21:55,427 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:21:59,775 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:00,417 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:04,468 [INFO ] [.49.52:54154=11] AttributeConverter-hmmdict-omx: Turning off WARN and ERROR logs on this logger (got 100 in 19ms, min delay = 1000ms)
+2018-11-23 10:22:04,503 [INFO ] [.49.52:54154=11] AttributeConverter-hmmdict-jse: Turning off WARN and ERROR logs on this logger (got 100 in 53ms, min delay = 1000ms)
+2018-11-23 10:22:04,638 [INFO ] [IMC-omx        ] StreamHandler: Turning off WARN and ERROR logs on this logger (got 100 in 177ms, min delay = 1000ms)
+2018-11-23 10:22:04,766 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:05,407 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:09,762 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:10,402 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:14,752 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:15,392 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:19,747 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:20,321 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:24,799 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:25,312 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:29,795 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:30,307 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:34,784 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:35,297 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:39,777 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:40,289 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:44,768 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:45,282 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:49,764 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:50,274 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:54,752 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:22:55,266 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:22:59,744 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:00,258 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:04,735 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:05,249 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:09,729 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:10,240 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:14,722 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:15,233 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:19,714 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:20,291 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:24,771 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:25,282 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:29,761 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:30,273 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:34,752 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:35,264 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:39,744 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:40,256 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:44,739 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:45,250 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:49,729 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:50,240 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:54,721 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:23:55,233 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:23:59,714 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:00,225 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:04,705 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:05,217 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:09,697 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:10,209 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:14,693 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:15,199 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:19,680 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:20,257 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:24,740 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:25,249 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:29,729 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:30,241 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:34,722 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:35,236 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:39,713 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:40,225 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:44,704 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:45,217 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:49,697 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:50,209 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:54,689 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:24:55,201 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:24:59,680 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:00,193 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:04,671 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:05,184 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:09,663 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:10,176 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:14,658 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:15,169 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:19,649 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:20,225 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:24,704 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:25,217 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:29,698 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:30,209 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:34,688 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:35,200 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:39,680 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:40,193 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:44,675 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:45,185 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:49,663 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:50,177 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:54,656 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:25:55,168 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:25:59,650 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:00,161 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:04,641 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:05,154 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:09,633 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:10,144 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:14,624 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:15,137 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:19,616 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:20,194 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:24,673 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:25,185 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:29,665 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:30,176 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:34,660 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:35,168 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:39,647 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:40,160 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:44,640 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:45,151 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:49,632 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:50,144 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:54,624 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:26:55,136 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:26:59,616 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:00,128 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:04,607 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:05,120 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:09,599 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:10,112 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:14,592 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:15,104 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:19,585 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:20,161 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:24,640 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:25,154 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:29,633 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:30,144 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:34,624 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:35,136 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:39,617 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:40,129 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:44,609 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:45,121 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:49,599 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:50,112 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:54,592 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:27:55,104 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:27:59,584 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:00,096 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:04,575 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:05,087 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:09,567 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:10,080 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:14,560 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:15,072 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:19,553 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:20,129 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:24,607 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:25,121 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:29,600 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:30,111 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:34,591 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:35,104 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:39,584 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:40,097 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:44,578 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:45,089 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:49,568 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:50,083 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:54,560 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:28:55,073 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:28:59,552 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:00,065 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:04,546 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:05,060 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:09,537 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:10,049 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:14,529 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:15,040 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:19,522 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:20,096 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:24,576 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:25,089 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:29,568 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:30,082 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:34,560 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:35,072 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:39,552 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:40,064 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:44,546 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:45,056 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:49,536 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:50,049 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:54,528 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:29:55,041 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:29:59,520 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:00,032 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:04,512 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:05,024 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:09,504 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:10,015 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:14,498 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:15,013 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:19,488 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:20,064 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:24,544 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:25,056 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:29,536 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:30,048 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:34,528 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:35,040 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:39,520 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:40,031 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:44,512 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:45,024 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:49,504 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:50,015 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:54,495 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:30:55,007 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:30:59,488 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:00,000 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:04,482 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:04,993 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:09,473 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:09,985 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:14,464 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:14,976 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:19,455 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:20,033 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:24,511 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:25,023 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:29,504 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:30,016 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:34,495 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:35,008 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:39,491 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:40,001 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:44,479 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:44,992 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:49,472 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:49,985 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:54,463 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:54,977 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:31:59,457 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:31:59,969 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:04,448 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:04,975 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:09,439 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:09,952 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:14,432 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:14,945 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:19,425 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:20,001 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:24,481 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:24,992 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:29,473 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:29,984 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:34,465 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:34,977 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:39,456 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:39,968 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:44,447 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:44,961 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:49,439 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:49,952 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:54,431 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:54,944 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:32:59,424 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:32:59,936 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:04,418 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:04,928 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:09,408 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:09,920 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:14,404 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:14,913 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:19,392 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:19,968 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:24,448 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:24,960 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:29,440 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:29,952 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:34,434 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:34,945 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:39,423 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:39,937 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:44,415 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:44,928 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:49,409 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:49,921 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:54,399 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:54,912 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:33:59,392 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:33:59,903 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:04,383 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:04,896 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:09,376 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:09,888 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:14,367 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:14,880 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:19,359 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:19,936 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:24,418 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:24,928 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:29,408 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:29,920 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:34,399 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:34,915 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:39,394 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:39,905 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:44,384 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:44,898 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:49,376 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:49,890 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:54,370 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:54,880 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:34:59,360 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:34:59,873 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:04,351 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:04,865 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:09,343 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:09,856 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:14,336 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:14,849 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:19,327 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:19,904 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:24,384 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:24,896 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:29,377 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:29,888 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:34,368 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:34,880 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:39,361 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:39,872 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:44,352 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:44,864 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:49,343 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:49,855 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:54,335 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:54,848 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:35:59,329 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:35:59,840 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:36:04,321 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:36:04,834 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:36:09,312 [ERROR] [Connection[omx]] CONNECTION-omx: omx (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_NOREQU: RC_UA_INVALID_NAME_OR_PASSWORD
+2018-11-23 10:36:09,825 [ERROR] [Connection[jse]] CONNECTION-jse: jse (imc:quanthouse): QHException: Cannot connect to 172.16.112.215:6040 as alize_dev: RC_UA_TOO_MANY_CONNECTIONS
+2018-11-23 10:36:12,593 [INFO ] [Shutdown-IMS   ] CONNECTION-oslo: oslo (imc:quanthouse): Connection lost on oslo: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:12,593 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[oslo]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:12,697 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1264688]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,698 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301093]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,699 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303147]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,699 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302776]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,699 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300730]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,699 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/64806]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,700 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57522]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,700 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300504]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,700 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/45901]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,700 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/55463]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,700 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303929]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,701 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/17151]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,701 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,701 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6296]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,701 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2059131]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,702 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2067735]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,702 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/60667]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,702 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250275]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,702 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301298]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,703 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251274]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,703 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51529]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,703 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/66985]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,704 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301320]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,704 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300591]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,704 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/65045]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,704 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251267]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,705 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16466]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,705 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15669]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,705 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/60209]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,705 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27721]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,706 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1249973]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,706 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008427]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,706 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302433]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,706 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15440]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,707 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59485]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,707 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301905]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,707 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6006]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,707 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301292]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,708 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301145]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,708 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6269]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,709 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/34078]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,709 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/23281]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,709 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,710 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304025]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,710 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304204]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,710 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303941]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,710 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301140]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,711 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301610]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,711 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15121]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,711 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303481]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,712 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302115]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,712 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302445]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,712 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16511]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,712 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/56454]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,713 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/49006]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,713 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27028]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,713 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303168]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,714 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81450]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,714 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61088]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,714 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008421]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,715 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51606]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,715 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61513]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,715 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61983]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,715 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2058326]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,716 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303418]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,716 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/39773]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,716 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59363]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,717 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1267552]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,717 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15145]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,717 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300995]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,718 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6240]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,718 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/38027]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,718 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6177]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,719 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301918]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,719 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303207]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,719 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15900]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,719 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6073]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,720 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/28597]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,720 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/71330]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,720 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6282]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,721 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303474]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,721 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008430]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,721 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300289]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,722 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250770]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,722 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6163]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,722 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/70904]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,723 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,723 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251127]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,723 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63829]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,723 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300423]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,724 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81453]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,724 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302477]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,724 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250271]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,725 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59576]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,725 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6085]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,725 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81220]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,726 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300977]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,726 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63318]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,726 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63004]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,727 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,727 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59268]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,727 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302524]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,727 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303448]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,728 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63613]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,728 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2058327]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,728 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/68236]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,729 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300695]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,729 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/29719]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,729 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/46930]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,730 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16189]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,730 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6157]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,730 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6195]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,731 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301946]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,731 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301592]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,731 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/46096]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,732 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301198]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,732 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301887]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,732 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251131]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,733 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6212]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,733 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/24019]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,733 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1249129]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,733 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304386]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,734 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1270371]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,734 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57018]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,734 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51098]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,735 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304211]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,735 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302111]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,735 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,735 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/65259]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,736 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/62361]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,736 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/68907]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,736 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301163]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,736 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6310]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,737 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303054]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,737 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63319]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,737 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6037]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,737 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304153]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,738 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61979]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,738 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/79729]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,738 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302448]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,738 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303125]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,739 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/28775]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,739 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/58337]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,739 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301162]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,739 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27953]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,739 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/71329]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,740 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6034]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,740 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301283]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,740 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,740 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/48772]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,741 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57456]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,741 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/56655]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,741 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/81451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,741 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/81451]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/1250271]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/1250271]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2067735]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2067735]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/81453]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/81453]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/1304120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/1304120]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2008430]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2008430]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2058326]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2058326]
+2018-11-23 10:36:12,743 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/58337]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,743 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/58337]
+2018-11-23 10:36:12,744 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/61088]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,744 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/61088]
+2018-11-23 10:36:12,744 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/23281]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,744 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/23281]
+2018-11-23 10:36:12,751 [INFO ] [Shutdown-IMS   ] CONNECTION-euronextmbo: euronextmbo (imc:quanthouse): Connection lost on euronextmbo: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:12,751 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[euronextmbo]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:12,874 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-10:21:19.371: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,875 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110253]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,876 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110449]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,876 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1136471]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,877 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1150939]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,877 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1346521]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,878 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1155311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,878 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110533]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,879 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110224]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,880 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110397]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,881 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110346]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,881 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110266]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,882 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110476]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,883 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1148462]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,883 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1130418]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,884 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110220]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,885 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110310]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,885 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110333]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,886 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1149640]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,887 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1187818]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,888 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110886]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,888 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1148615]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,889 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110527]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,890 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1155672]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,890 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110091]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,891 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1125870]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,891 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110833]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,892 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110508]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,893 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110964]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,893 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110307]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,894 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1111209]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,894 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1149237]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,895 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1232344]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,895 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110528]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,895 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110664]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,896 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1111067]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,896 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1159649]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,896 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110487]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,897 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110671]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,897 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1145533]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,898 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110386]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,898 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110238]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,898 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110540]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,899 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110128]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,899 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1129628]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,899 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110441]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,900 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1346150]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,900 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110304]: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:12,901 [INFO ] [socket listener] QuantHouseSummaryManager: Turning off WARN and ERROR logs on this logger (got 100 in 174ms, min delay = 1000ms)
+2018-11-23 10:36:13,083 [INFO ] [Shutdown-IMS   ] CONNECTION-swx: swx (imc:quanthouse): Connection lost on swx: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,083 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[swx]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,189 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-10:21:19.781: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:13,266 [INFO ] [Shutdown-IMS   ] CONNECTION-xetra: xetra (imc:quanthouse): Connection lost on xetra: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,266 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[xetra]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,378 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-10:21:20.155: RC_NORMAL_DISCONNECT
+2018-11-23 10:36:13,494 [INFO ] [Shutdown-IMS   ] CONNECTION-lse: lse (imc:quanthouse): Connection lost on lse: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,494 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[lse]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:36:13,608 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-10:21:20.777: RC_NORMAL_DISCONNECT

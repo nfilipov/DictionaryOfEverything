@@ -1,0 +1,486 @@
+	SEND_EMAIL_ON_ERROR=1
+2018-11-23 09:54:00,551 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.activation.response, fields=[[0]->[status, 1] [1]->[errorMessage, 7] ]]
+2018-11-23 09:54:00,552 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.properties.response, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] [4]->[configServerIsActive, 6] ]]
+2018-11-23 09:54:00,552 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.dependency.response, fields=[[0]->[processType, 7] [1]->[processLocalization, 7] [2]->[processMode, 7] [3]->[processDependencies, 29] [4]->[alias, 7] [5]->[errorMessage, 7] [6]->[configServerIsActive, 6] [7]->[processIsEnabled, 6] ]]
+2018-11-23 09:54:00,553 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.admin.response, fields=[[0]->[errorMessage, 7] [1]->[isForcePossible, 6] [2]->[configServerIsActive, 6] ]]
+2018-11-23 09:54:00,553 [INFO ] [main           ] Msg: registerType: MsgDesc[CONF.RES, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] ]]
+2018-11-23 09:54:02,577 [ERROR] [MAIN           ] BrokerClient: Unable to register com.ingalys.imc.svc.safety.hspersist.SafetyBaseRegistrator
+2018-11-23 09:54:02,635 [INFO ] [oreRegister-2-3] Msg: registerType: MsgDesc[_PST.SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 12] ]]
+2018-11-23 09:54:02,635 [INFO ] [oreRegister-2-3] Msg: registerType: MsgDesc[_PST.OPTMIZED_SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 84] ]]
+2018-11-23 09:54:06,077 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[STATUS, fields=[[0]->[productId, 7] [1]->[scenarioId, 7] [2]->[qtyOnMarket, 1] [3]->[priceOnMarket, 5] [4]->[qtySent, 1] [5]->[priceSent, 5] [6]->[scenarioStatus, 1] [7]->[nbMsgSent, 1] [8]->[lastAction, 1] [9]->[type, 2] [10]->[lastErrorMessage, 7] [11]->[timestamp, 3] [12]->[priceInternal, 5] ]]
+2018-11-23 09:54:06,660 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MM_UKO_A, fields=[[0]->[success, 6] [1]->[errorMsg, 7] ]]
+2018-11-23 09:54:07,004 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[EXEC_DIFF_SERVICE_RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedTrades, 27] ]]
+2018-11-23 09:54:07,146 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MPV_REFRESH_ERROR, fields=[[0]->[errorDesc, 7] ]]
+2018-11-23 09:54:11,556 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], settings={name=marketoncloserulesource, alias=MarketOnCloseRuleSource, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,556 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], type=null, alias=MarketOnCloseRuleSource)
+2018-11-23 09:54:11,560 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotter, alias=RFQBlotter, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,560 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotter)
+2018-11-23 09:54:11,565 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], settings={name=externalpricingconfiguration, alias=ExternalPricingConfiguration, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,565 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], type=null, alias=ExternalPricingConfiguration)
+2018-11-23 09:54:11,585 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], settings={name=pendingexecution, alias=PendingExecution, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,585 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], type=null, alias=PendingExecution)
+2018-11-23 09:54:11,589 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotterhistoric, alias=RFQBlotterHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,589 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotterHistoric)
+2018-11-23 09:54:11,591 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebooking, alias=TradeBooking, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,591 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBooking)
+2018-11-23 09:54:11,597 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebookinghistoric, alias=TradeBookingHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,597 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBookingHistoric)
+2018-11-23 09:54:11,601 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], settings={name=scheduler, alias=Scheduler, useWeakRecordStore=false, hidden=true})
+2018-11-23 09:54:11,601 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], type=null, alias=Scheduler)
+2018-11-23 09:54:17,798 [INFO ] [MAIN           ] AutomaticIndexer: Turning off WARN and ERROR logs on this logger (got 100 in 39ms, min delay = 1000ms)
+2018-11-23 09:54:19,812 [INFO ] [-ASYNC_BACKUP-5] DictUtils: Turning off WARN and ERROR logs on this logger (got 100 in 739ms, min delay = 1000ms)
+2018-11-23 09:54:20,884 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[_PST.PUT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedRows, 12] [3]->[failedMessages, 12] ]]
+2018-11-23 09:55:01,963 [INFO ] [IMC-omx        ] NasdaqNordicStatus: Turning off WARN and ERROR logs on this logger (got 100 in 335ms, min delay = 1000ms)
+2018-11-23 10:20:58,520 [INFO ] [Shutdown-IMS   ] CONNECTION-oslo: oslo (imc:quanthouse): Connection lost on oslo: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:58,523 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[oslo]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:58,628 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303147]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,629 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300730]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,630 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1264688]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,630 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301093]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,630 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51529]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,630 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/66985]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,630 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2067735]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,631 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/60667]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,631 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6296]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,631 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2059131]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,631 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/17151]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,632 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,632 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/55463]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,632 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303929]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,632 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300504]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,632 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/45901]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,633 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/64806]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,633 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57522]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,633 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302776]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,633 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16466]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,634 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301320]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,634 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300591]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,635 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/65045]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,635 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250275]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,635 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301298]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,635 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251274]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,636 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15669]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,636 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/60209]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,636 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251267]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,637 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27721]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,637 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1249973]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,637 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008427]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,637 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302433]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,638 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15440]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,638 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59485]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,638 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/34078]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,639 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301905]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,639 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6006]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,639 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301292]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,639 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301145]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,640 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6269]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,640 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303941]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,641 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301140]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,641 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304025]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,641 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304204]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,641 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/23281]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,642 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,642 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16511]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,642 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/56454]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,643 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302445]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,643 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303481]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,643 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302115]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,643 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301610]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,644 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15121]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,644 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303168]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,645 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27028]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,645 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61088]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,645 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/49006]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,646 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61983]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,646 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81450]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,646 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6240]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,646 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/38027]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,647 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15145]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,647 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2058326]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,647 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303418]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,648 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/39773]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,648 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59363]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,648 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1267552]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,649 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008421]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,649 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51606]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,649 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61513]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,649 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301918]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,650 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300995]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,650 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6177]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,650 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303474]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,651 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2008430]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,651 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300289]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,651 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6073]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,651 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/28597]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,652 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/71330]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,652 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303207]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,652 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/15900]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,653 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251127]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,653 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63829]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,653 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6163]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,653 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/70904]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,654 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250770]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,654 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6282]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,654 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300423]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,654 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81453]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,655 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,655 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59576]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,655 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6085]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,656 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/59268]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,656 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302524]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,656 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63318]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,657 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63004]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,657 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,657 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81220]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,657 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300977]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,658 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302477]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,658 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1250271]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,658 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/68236]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,659 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/2058327]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,659 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63613]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,659 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303448]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,660 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/29719]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,660 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/46930]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,660 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1300695]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,661 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/16189]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,661 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6157]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,661 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301592]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,661 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6195]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,662 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301946]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,662 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301887]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,662 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/24019]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,662 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/46096]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,662 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301198]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,663 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6212]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,663 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1251131]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,663 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1249129]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,663 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304386]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,663 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57018]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,664 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1270371]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,664 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304211]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,664 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302111]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,664 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/65259]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,664 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/51098]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,665 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/63319]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,665 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/62361]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,665 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/68907]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,665 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/81451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,666 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6310]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,666 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303054]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,666 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/61979]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,666 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301163]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,666 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6037]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,667 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1304153]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,667 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303125]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,667 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/28775]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,667 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1302448]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,667 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/79729]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,668 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/58337]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,668 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301162]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,668 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/27953]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,668 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/48772]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,669 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1303451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,669 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/71329]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,669 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/6034]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,669 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/1301283]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,669 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/57456]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,670 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[oslo/56655]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,670 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/1304120]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,670 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/1304120]
+2018-11-23 10:20:58,672 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2008430]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,672 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2008430]
+2018-11-23 10:20:58,672 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/58337]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,672 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/58337]
+2018-11-23 10:20:58,672 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/61088]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,672 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/61088]
+2018-11-23 10:20:58,672 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/23281]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,672 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/23281]
+2018-11-23 10:20:58,672 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/81451]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,673 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/81451]
+2018-11-23 10:20:58,673 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/1250271]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,673 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/1250271]
+2018-11-23 10:20:58,673 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2067735]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,673 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2067735]
+2018-11-23 10:20:58,673 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/81453]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,673 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/81453]
+2018-11-23 10:20:58,673 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[oslo/2058326]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,673 [ERROR] [socket listener] DEPTH-oslo: Subscription rejected on VariableDepth[oslo/2058326]
+2018-11-23 10:20:58,686 [INFO ] [Shutdown-IMS   ] CONNECTION-euronextmbo: euronextmbo (imc:quanthouse): Connection lost on euronextmbo: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:58,686 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[euronextmbo]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:58,797 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1136471]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,798 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1130418]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,798 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110220]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,798 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110310]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,798 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110333]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,799 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110253]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,799 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110449]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,799 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110397]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,799 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110346]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,800 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110266]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,800 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110476]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,800 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1148462]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,801 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110307]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,801 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1111209]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,801 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1149237]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,801 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1232344]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,802 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1150939]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,802 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1346521]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,802 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1155311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,803 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110533]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,803 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110224]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,803 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1148615]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,803 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110527]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,804 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1155672]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,804 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110091]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,804 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1125870]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,805 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110833]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,805 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110508]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,805 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110964]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,806 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110886]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,806 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1187818]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,806 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110540]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,806 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110128]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,807 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1149640]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,807 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110386]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,807 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110238]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,808 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110487]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,808 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110671]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,808 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1145533]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,808 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110664]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,809 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1111067]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,809 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1159649]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,809 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110304]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,810 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110864]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,810 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110831]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,810 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1124003]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,811 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[euronextmbo/1110932]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:58,811 [INFO ] [socket listener] QuantHouseSummaryManager: Turning off WARN and ERROR logs on this logger (got 100 in 154ms, min delay = 1000ms)
+2018-11-23 10:20:59,006 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1111189]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,006 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1111189]
+2018-11-23 10:20:59,006 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1124003]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,006 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1124003]
+2018-11-23 10:20:59,006 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1181769]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,006 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1181769]
+2018-11-23 10:20:59,007 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1232344]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,007 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1232344]
+2018-11-23 10:20:59,007 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110242]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,007 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110242]
+2018-11-23 10:20:59,008 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110403]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,008 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110403]
+2018-11-23 10:20:59,008 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1180732]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,008 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1180732]
+2018-11-23 10:20:59,008 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110279]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,008 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110279]
+2018-11-23 10:20:59,008 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110280]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,008 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110280]
+2018-11-23 10:20:59,009 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1111102]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,009 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1111102]
+2018-11-23 10:20:59,009 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1146677]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,009 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1146677]
+2018-11-23 10:20:59,009 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110276]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,009 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110276]
+2018-11-23 10:20:59,009 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1126665]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,009 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1126665]
+2018-11-23 10:20:59,009 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110831]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,009 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110831]
+2018-11-23 10:20:59,010 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1111024]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,010 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1111024]
+2018-11-23 10:20:59,010 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1148103]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,010 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1148103]
+2018-11-23 10:20:59,010 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110278]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,010 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110278]
+2018-11-23 10:20:59,010 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1110148]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,010 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1110148]
+2018-11-23 10:20:59,010 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[euronextmbo/1441825]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,010 [ERROR] [socket listener] DEPTH-euronextmbo: Subscription rejected on VariableDepth[euronextmbo/1441825]
+2018-11-23 10:20:59,014 [INFO ] [Shutdown-IMS   ] CONNECTION-swx: swx (imc:quanthouse): Connection lost on swx: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,014 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[swx]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,183 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0008837566_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,184 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0008837566_CHF]
+2018-11-23 10:20:59,184 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0014420886_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,184 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0014420886_CHF]
+2018-11-23 10:20:59,184 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0360674466_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,184 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0360674466_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0258739751_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0258739751_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0126673539_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0126673539_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0118923892_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0118923892_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0048854746_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0048854746_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0012142631_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0012142631_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0386200239_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0386200239_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/LU1484800955_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/LU1484800955_CHF]
+2018-11-23 10:20:59,185 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0012138605_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,185 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0012138605_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0016999861_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0016999861_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/IE00BDQZN774_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/IE00BDQZN774_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/IE00BX7RR250_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/IE00BX7RR250_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0003541510_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0003541510_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0009002962_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0009002962_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0312309682_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0312309682_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0011484067_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0011484067_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0267291224_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0267291224_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/IE00BDGV0C91_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/IE00BDGV0C91_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0012221716_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0012221716_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/LI0355147575_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/LI0355147575_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0001752309_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0001752309_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0106405894_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,186 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0106405894_CHF]
+2018-11-23 10:20:59,186 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0012335540_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0012335540_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0010570759_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0010570759_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0001347498_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0001347498_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0273774791_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0273774791_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0014852781_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0014852781_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0406705126_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0406705126_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0124758522_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0124758522_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0284142913_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0284142913_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0100778445_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0100778445_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0225173167_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0225173167_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0012032113_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0012032113_CHF]
+2018-11-23 10:20:59,187 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[swx/CH0368190739_CHF]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,187 [ERROR] [socket listener] DEPTH-swx: Subscription rejected on VariableDepth[swx/CH0368190739_CHF]
+2018-11-23 10:20:59,196 [INFO ] [Shutdown-IMS   ] CONNECTION-omx: omx (imc:quanthouse): Connection lost on omx: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,196 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[omx]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,313 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-09:54:15.016: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,457 [INFO ] [Shutdown-IMS   ] CONNECTION-xetra: xetra (imc:quanthouse): Connection lost on xetra: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,458 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[xetra]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,569 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/23-09:54:15.217: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,709 [INFO ] [Shutdown-IMS   ] CONNECTION-jse: jse (imc:quanthouse): Connection lost on jse: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,709 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[jse]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/37108]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/37108]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/15178]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/15178]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/4853]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/4853]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/525]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/525]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/7440]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/7440]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/52181]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,854 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/52181]
+2018-11-23 10:20:59,854 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/42997]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/42997]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/36242]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/36242]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/13652]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/13652]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/72445]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/72445]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/12540]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/12540]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/74817]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/74817]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/38897]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/38897]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/65063]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/65063]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/43096]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/43096]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/73312]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/73312]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/69094]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/69094]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/72578]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/72578]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/266]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/266]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/8847]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/8847]
+2018-11-23 10:20:59,855 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[jse/65062]: RC_NORMAL_DISCONNECT
+2018-11-23 10:20:59,855 [ERROR] [socket listener] DEPTH-jse: Subscription rejected on VariableDepth[jse/65062]
+2018-11-23 10:20:59,861 [INFO ] [Shutdown-IMS   ] CONNECTION-lse: lse (imc:quanthouse): Connection lost on lse: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:20:59,862 [WARN ] [Shutdown-IMS   ] Reconnecter: com.ingalys.imc.stub.StubConnection[lse]: Stopping auto-reconnect because of a non-transient error: cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+cause=com.ingalys.util.DisposedException: Object disposed (error=11)
+2018-11-23 10:21:00,119 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/130797]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,119 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/130797]
+2018-11-23 10:21:00,119 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/136755]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,119 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/136755]
+2018-11-23 10:21:00,119 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/22045]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,119 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/22045]
+2018-11-23 10:21:00,119 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/139926]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,119 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/139926]
+2018-11-23 10:21:00,121 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/5823]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,121 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/5823]
+2018-11-23 10:21:00,121 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/5323]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,121 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/5323]
+2018-11-23 10:21:00,121 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/129821]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,121 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/129821]
+2018-11-23 10:21:00,121 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/72308]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,121 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/72308]
+2018-11-23 10:21:00,121 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/4844]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/4844]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/2927]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/2927]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/6939]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/6939]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/140311]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/140311]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/129801]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/129801]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/131237]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/131237]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/131364]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/131364]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/6639]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/6639]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/39079]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/39079]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/137688]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/137688]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/129266]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/129266]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/4044]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/4044]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/148878]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/148878]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/118005]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/118005]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/5188]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/5188]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/133977]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/133977]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/133822]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/133822]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/149961]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/149961]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/124289]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/124289]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/3174]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/3174]
+2018-11-23 10:21:00,122 [ERROR] [socket listener] MBOHandler: Subscription cancelled for VariableDepth[lse/140054]: RC_NORMAL_DISCONNECT
+2018-11-23 10:21:00,122 [ERROR] [socket listener] DEPTH-lse: Subscription rejected on VariableDepth[lse/140054]

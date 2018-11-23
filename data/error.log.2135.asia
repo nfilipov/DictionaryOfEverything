@@ -1,0 +1,718 @@
+	SEND_EMAIL_ON_ERROR=1
+2018-11-22 21:35:06,630 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.activation.response, fields=[[0]->[status, 1] [1]->[errorMessage, 7] ]]
+2018-11-22 21:35:06,631 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.properties.response, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] [4]->[configServerIsActive, 6] ]]
+2018-11-22 21:35:06,631 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.dependency.response, fields=[[0]->[processType, 7] [1]->[processLocalization, 7] [2]->[processMode, 7] [3]->[processDependencies, 29] [4]->[alias, 7] [5]->[errorMessage, 7] [6]->[configServerIsActive, 6] [7]->[processIsEnabled, 6] ]]
+2018-11-22 21:35:06,632 [INFO ] [main           ] Msg: registerType: MsgDesc[FWRK.CONF.admin.response, fields=[[0]->[errorMessage, 7] [1]->[isForcePossible, 6] [2]->[configServerIsActive, 6] ]]
+2018-11-22 21:35:06,633 [INFO ] [main           ] Msg: registerType: MsgDesc[CONF.RES, fields=[[0]->[processProperties, 29] [1]->[errorMessage, 7] [2]->[processDependencies, 29] [3]->[processStandby, 6] ]]
+2018-11-22 21:35:08,605 [ERROR] [MAIN           ] BrokerClient: Unable to register com.ingalys.imc.svc.safety.hspersist.SafetyBaseRegistrator
+2018-11-22 21:35:08,665 [INFO ] [oreRegister-2-1] Msg: registerType: MsgDesc[_PST.SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 12] ]]
+2018-11-22 21:35:08,665 [INFO ] [oreRegister-2-1] Msg: registerType: MsgDesc[_PST.OPTMIZED_SELECT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[data, 84] ]]
+2018-11-22 21:35:11,958 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[STATUS, fields=[[0]->[productId, 7] [1]->[scenarioId, 7] [2]->[qtyOnMarket, 1] [3]->[priceOnMarket, 5] [4]->[qtySent, 1] [5]->[priceSent, 5] [6]->[scenarioStatus, 1] [7]->[nbMsgSent, 1] [8]->[lastAction, 1] [9]->[type, 2] [10]->[lastErrorMessage, 7] [11]->[timestamp, 3] [12]->[priceInternal, 5] ]]
+2018-11-22 21:35:12,499 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MM_UKO_A, fields=[[0]->[success, 6] [1]->[errorMsg, 7] ]]
+2018-11-22 21:35:12,802 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[EXEC_DIFF_SERVICE_RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedTrades, 27] ]]
+2018-11-22 21:35:12,994 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[MPV_REFRESH_ERROR, fields=[[0]->[errorDesc, 7] ]]
+2018-11-22 21:35:17,374 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], settings={name=marketoncloserulesource, alias=MarketOnCloseRuleSource, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,374 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.marketoncloserulesource' (dispatch thread=broker-uss, parameters=[mic], fields=[mic(S:inf), sendErrorOffsetInMin(I), cancelWarnOffsetInMin(I), cancelErrorOffsetInMin(I)], type=null, alias=MarketOnCloseRuleSource)
+2018-11-22 21:35:17,380 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotter, alias=RFQBlotter, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,380 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotter' (dispatch thread=broker-uss, parameters=[quoteRequestId], fields=[quoteRequestId(S:inf), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotter)
+2018-11-22 21:35:17,388 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], settings={name=externalpricingconfiguration, alias=ExternalPricingConfiguration, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,388 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.externalpricingconfiguration' (dispatch thread=broker-uss, parameters=[productId, context, ulId], fields=[productId(S:inf), context(S:inf), ulId(S:inf), staleWarningDelayMs(I), staleErrorDelayMs(I), refreshLimiterPeriodMs(I)], type=null, alias=ExternalPricingConfiguration)
+2018-11-22 21:35:17,429 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], settings={name=pendingexecution, alias=PendingExecution, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,429 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.pendingexecution' (dispatch thread=broker-uss, parameters=[generatedId], fields=[generatedId(S:inf), execType(S:inf), tradeId(S:inf), portfolioId(S:inf), brokerExchangeId(S:inf), mic(S:inf), userId(S:inf), imsId(S:inf), orderId(S:inf), way(S:inf), quantity(I), price(D), timestamp(Dt), imsUserId(S:inf), userData(S:inf), marketData(S:inf), executionState(S:inf), productId(S:inf), context(S:inf), toHedge(B), sessionId(S:inf), hedgeUlId(S:inf), hedgeRatio(D), hedgeUlSpot(D), hedgeProxyUlSpot(D), exchangeFees(D), clearingFees(D), brokerageFees(D), crossTradeId(S:inf), feesData(S:inf), isComplete(B), ignoreInPosition(B), marketTradeId(S:inf), productToHedgeForex(D), ulId(S:inf), productToUlForex(D), errorMessage(S:inf), shortSellType(S:inf), tradeType(S:inf), currencyId(S:inf), eventTimestamp(Dt), version(I), brokerName(S:inf), boughtAmount(D), boughtCurrency(S:inf), soldAmount(D), soldCurrency(S:inf), immediateHedgePercent(D), immediateHedgeStrategy(S:inf), originalOrderPrice(D), originalOrderQuantity(I), orderTimestamp(Dt), execMarketData(S:inf), settlementDate(Dt), settlementFees(D), comments(S:inf), imsChannelType(I), productToPositionForex(D), positionEffect(I), strategyId(S:inf), strategyTradeId(S:inf), peerCustomFields(S:inf), peerUId(S:inf), blockTradeType(S:inf)], type=null, alias=PendingExecution)
+2018-11-22 21:35:17,434 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], settings={name=rfqblotterhistoric, alias=RFQBlotterHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,434 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.rfqblotterhistoric' (dispatch thread=broker-uss, parameters=[quoteRequestId, archiveTimestamp], fields=[quoteRequestId(S:inf), archiveTimestamp(Dt), userId(S:inf), brokerId(S:inf), productId(S:inf), exchangeMic(S:inf), requestTimestamp(Dt), replyTimestamp(Dt), tradeTimestamp(Dt), responseType(S:inf), responseTypeSource(S:inf), status(S:inf), quoteReplyId(S:inf), buyQty(I), buyPrice(D), sellQty(I), sellPrice(D), errorMessage(S:inf)], type=null, alias=RFQBlotterHistoric)
+2018-11-22 21:35:17,436 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebooking, alias=TradeBooking, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,436 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebooking' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId], fields=[tradeId(S:inf), tradeLegId(S:inf), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBooking)
+2018-11-22 21:35:17,441 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], settings={name=tradebookinghistoric, alias=TradeBookingHistoric, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,441 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.tradebookinghistoric' (dispatch thread=broker-uss, parameters=[tradeId, tradeLegId, archiveTimestamp], fields=[tradeId(S:inf), tradeLegId(S:inf), archiveTimestamp(Dt), execType(S:inf), tradeType(S:inf), bookId(S:inf), counterpartyId(S:inf), status(S:inf), bookingSystem(S:inf), bookingError(S:inf), bookingId(S:inf), tradeTimestamp(Dt), statusTimestamp(Dt), messageFormat(S:inf), messageFormatVersion(S:inf), messageHeaderVersion(S:inf), applicationId(S:inf), replyDownStream(S:inf), source(S:inf), messageTimestamp(Dt), messageType(S:inf), targetDownStream(S:inf), messageId(S:inf), applicationSource(S:inf), eventType(S:inf), subEventType(S:inf), location(S:inf), way(S:inf), tradeRevision(I), inputBy(S:inf), legalEntity(S:inf), quantity(I), price(D), principal(D), securityId(S:inf), securityType(S:inf), settlementCurrency(S:inf), settlementDate(Dt), downStreamStrategy(S:inf), tradeCurrency(S:inf), localTradeTimeStamp(Dt), traderId(S:inf), tradingArea(S:inf), dealCondition(S:inf), accruedInterest(D)], type=null, alias=TradeBookingHistoric)
+2018-11-22 21:35:17,445 [INFO ] [MAIN           ] USSImpl: Registering table 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], settings={name=scheduler, alias=Scheduler, useWeakRecordStore=false, hidden=true})
+2018-11-22 21:35:17,445 [INFO ] [MAIN           ] USSImpl: Registering channel 'hsbroker.broker.scheduler' (dispatch thread=broker-uss, parameters=[taskId], fields=[taskId(I), scheduleCommand(S:inf), taskName(S:inf), month(I), dayOfMonth(I), daysOfWeek(I), weekNumber(I), dayOfWeekNumber(I), scheduleTime(S:inf), scheduleTimezone(S:inf), checkBeforeExecutionDelay(I), scheduleCommandParameters(S:inf), context(S:inf), description(S:inf), isEnabled(B), onSuccessTaskId(I), onWarningTaskId(I), onErrorTaskId(I), owner(S:inf), isTemplate(B), useTemplate(B), templateTaskId(I)], type=null, alias=Scheduler)
+2018-11-22 21:35:24,183 [INFO ] [MAIN           ] Msg: registerType: MsgDesc[_PST.PUT.RESPONSE, fields=[[0]->[status, 1] [1]->[errorMessage, 7] [2]->[failedRows, 12] [3]->[failedMessages, 12] ]]
+2018-11-22 21:50:51,844 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/22-21:35:20.317: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,844 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MYS]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,845 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MYS]
+2018-11-22 21:50:51,850 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[tse/7972]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,850 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ED1]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,850 [ERROR] [socket listener] SUMMARY-tse: Subscription rejected on JimboSummary[tse/7972]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ED1]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[tse/6054]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-tse: Subscription rejected on JimboSummary[tse/6054]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/WHA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/WHA]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FPC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FPC]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/TGG]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/TGG]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PAF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,851 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PAF]
+2018-11-22 21:50:51,851 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/VHT]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,852 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/VHT]
+2018-11-22 21:50:51,852 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FID]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,852 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FID]
+2018-11-22 21:50:51,852 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/AOG]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,852 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/AOG]
+2018-11-22 21:50:51,852 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MP1]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,852 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MP1]
+2018-11-22 21:50:51,853 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/WAA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,853 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/WAA]
+2018-11-22 21:50:51,853 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PIA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,853 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PIA]
+2018-11-22 21:50:51,854 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PNC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,854 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PNC]
+2018-11-22 21:50:51,854 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CYL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,854 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CYL]
+2018-11-22 21:50:51,854 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PFP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,854 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PFP]
+2018-11-22 21:50:51,854 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/WGF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,854 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/WGF]
+2018-11-22 21:50:51,854 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CDP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CDP]
+2018-11-22 21:50:51,855 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SEC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SEC]
+2018-11-22 21:50:51,855 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/GOW]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/GOW]
+2018-11-22 21:50:51,855 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/QUB]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/QUB]
+2018-11-22 21:50:51,855 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PLG]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PLG]
+2018-11-22 21:50:51,855 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3814]
+2018-11-22 21:50:51,855 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ORE]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,855 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ORE]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/RIC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/RIC]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CIN]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CIN]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/NVL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/NVL]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/OMN]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/OMN]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ATL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ATL]
+2018-11-22 21:50:51,856 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SDA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,856 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SDA]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/3PL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/3PL]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/DJW]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/DJW]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SPO]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SPO]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/NEA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/NEA]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ONE]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ONE]
+2018-11-22 21:50:51,857 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/EGF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,857 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/EGF]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/BLA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/BLA]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/AYS]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/AYS]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/RHP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/RHP]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MGG]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MGG]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CRR]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CRR]
+2018-11-22 21:50:51,858 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SPK]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,858 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SPK]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/AAC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/AAC]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/GMA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/GMA]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/KAR]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/KAR]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CYP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CYP]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/JHC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/JHC]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IDX]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,859 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IDX]
+2018-11-22 21:50:51,859 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IVC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,860 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IVC]
+2018-11-22 21:50:51,860 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/KPT]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,860 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/KPT]
+2018-11-22 21:50:51,861 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8903]
+2018-11-22 21:50:51,861 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FGX]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,861 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FGX]
+2018-11-22 21:50:51,861 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CIP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,861 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CIP]
+2018-11-22 21:50:51,861 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/DTL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,861 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/DTL]
+2018-11-22 21:50:51,861 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MWY]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,862 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MWY]
+2018-11-22 21:50:51,862 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/NZK]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,862 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3320]
+2018-11-22 21:50:51,862 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/NZK]
+2018-11-22 21:50:51,862 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/KMD]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,862 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/KMD]
+2018-11-22 21:50:51,863 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MOE]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,863 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MOE]
+2018-11-22 21:50:51,863 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/NCK]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,863 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/NCK]
+2018-11-22 21:50:51,863 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6358]
+2018-11-22 21:50:51,863 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/OGC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,863 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/OGC]
+2018-11-22 21:50:51,863 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IFZ]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,863 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IFZ]
+2018-11-22 21:50:51,863 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PVS]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,863 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PVS]
+2018-11-22 21:50:51,864 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3045]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MIR]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MIR]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/AXL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/AXL]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/EXL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/EXL]
+2018-11-22 21:50:51,864 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6537]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ASL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ASL]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CAB]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CAB]
+2018-11-22 21:50:51,864 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/MND]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,864 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/MND]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FSA]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,865 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4619]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FSA]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/GXL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,865 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/GXL]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/VOC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,865 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/VOC]
+2018-11-22 21:50:51,865 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2749]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PPC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,865 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PPC]
+2018-11-22 21:50:51,865 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SRX]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,865 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SRX]
+2018-11-22 21:50:51,866 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4099]
+2018-11-22 21:50:51,866 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CKF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,866 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CKF]
+2018-11-22 21:50:51,866 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/EMF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,866 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/EMF]
+2018-11-22 21:50:51,866 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6545]
+2018-11-22 21:50:51,866 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SIL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,866 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SIL]
+2018-11-22 21:50:51,867 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/GNE]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,867 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7811]
+2018-11-22 21:50:51,867 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/GNE]
+2018-11-22 21:50:51,867 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CDD]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,867 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CDD]
+2018-11-22 21:50:51,867 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3277]
+2018-11-22 21:50:51,867 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/APO]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,867 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/APO]
+2018-11-22 21:50:51,868 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/SLC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,868 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/SLC]
+2018-11-22 21:50:51,868 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3224]
+2018-11-22 21:50:51,868 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/YAL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,868 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/YAL]
+2018-11-22 21:50:51,868 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/GNC]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,868 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/GNC]
+2018-11-22 21:50:51,868 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3178]
+2018-11-22 21:50:51,868 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FNP]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,868 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FNP]
+2018-11-22 21:50:51,869 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ELX]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,869 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2211]
+2018-11-22 21:50:51,869 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ELX]
+2018-11-22 21:50:51,869 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/PPH]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,869 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/PPH]
+2018-11-22 21:50:51,869 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4538]
+2018-11-22 21:50:51,869 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IDR]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,869 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IDR]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/EVT]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,870 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1726]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/EVT]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ERF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,870 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ERF]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ACQ]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,870 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1776]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ACQ]
+2018-11-22 21:50:51,870 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IFM]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,871 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IFM]
+2018-11-22 21:50:51,871 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3724]
+2018-11-22 21:50:51,871 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/HIT]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,871 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/HIT]
+2018-11-22 21:50:51,871 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/FWD]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,871 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/FWD]
+2018-11-22 21:50:51,871 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4951]
+2018-11-22 21:50:51,871 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/CGL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,871 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/CGL]
+2018-11-22 21:50:51,871 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/OMH]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,872 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/OMH]
+2018-11-22 21:50:51,872 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/IEL]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,872 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7292]
+2018-11-22 21:50:51,872 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/IEL]
+2018-11-22 21:50:51,872 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/BBN]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,872 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/BBN]
+2018-11-22 21:50:51,872 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2438]
+2018-11-22 21:50:51,872 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/NHF]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,872 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/NHF]
+2018-11-22 21:50:51,872 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/ARB]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,873 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/ARB]
+2018-11-22 21:50:51,873 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7888]
+2018-11-22 21:50:51,873 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/S66]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,873 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/S66]
+2018-11-22 21:50:51,873 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/DHG]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,873 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/DHG]
+2018-11-22 21:50:51,873 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2763]
+2018-11-22 21:50:51,873 [ERROR] [socket listener] QuantHouseSummaryManager: Subscription cancelled for JimboSummary[asx/HT1]: RC_NORMAL_DISCONNECT
+2018-11-22 21:50:51,873 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/HT1]
+2018-11-22 21:50:51,874 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6653]
+2018-11-22 21:50:51,874 [INFO ] [socket listener] QuantHouseSummaryManager: Turning off WARN and ERROR logs on this logger (got 100 in 29ms, min delay = 1000ms)
+2018-11-22 21:50:51,874 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/WAX]
+2018-11-22 21:50:51,874 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6379]
+2018-11-22 21:50:51,874 [ERROR] [socket listener] SUMMARY-asx: Subscription rejected on JimboSummary[asx/AOF]
+2018-11-22 21:50:51,875 [INFO ] [socket listener] SUMMARY-asx: Turning off WARN and ERROR logs on this logger (got 100 in 29ms, min delay = 1000ms)
+2018-11-22 21:50:51,875 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/5986]
+2018-11-22 21:50:51,876 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3447]
+2018-11-22 21:50:51,876 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4356]
+2018-11-22 21:50:51,877 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6763]
+2018-11-22 21:50:51,877 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6307]
+2018-11-22 21:50:51,878 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1884]
+2018-11-22 21:50:51,878 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9622]
+2018-11-22 21:50:51,879 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/5287]
+2018-11-22 21:50:51,879 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3751]
+2018-11-22 21:50:51,880 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6171]
+2018-11-22 21:50:51,880 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7466]
+2018-11-22 21:50:51,881 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7294]
+2018-11-22 21:50:51,881 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4064]
+2018-11-22 21:50:51,881 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4627]
+2018-11-22 21:50:51,882 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6333]
+2018-11-22 21:50:51,882 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8399]
+2018-11-22 21:50:51,882 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3712]
+2018-11-22 21:50:51,883 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9055]
+2018-11-22 21:50:51,883 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3695]
+2018-11-22 21:50:51,883 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3199]
+2018-11-22 21:50:51,884 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3571]
+2018-11-22 21:50:51,884 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6573]
+2018-11-22 21:50:51,884 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9036]
+2018-11-22 21:50:51,885 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9413]
+2018-11-22 21:50:51,885 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3787]
+2018-11-22 21:50:51,886 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9264]
+2018-11-22 21:50:51,886 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7946]
+2018-11-22 21:50:51,887 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9782]
+2018-11-22 21:50:51,887 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2375]
+2018-11-22 21:50:51,887 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8864]
+2018-11-22 21:50:51,888 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7748]
+2018-11-22 21:50:51,888 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1419]
+2018-11-22 21:50:51,888 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8244]
+2018-11-22 21:50:51,888 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9767]
+2018-11-22 21:50:51,889 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2349]
+2018-11-22 21:50:51,889 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7922]
+2018-11-22 21:50:51,889 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8337]
+2018-11-22 21:50:51,890 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9708]
+2018-11-22 21:50:51,890 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4840]
+2018-11-22 21:50:51,890 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3329]
+2018-11-22 21:50:51,891 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1681]
+2018-11-22 21:50:51,891 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7122]
+2018-11-22 21:50:51,891 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3970]
+2018-11-22 21:50:51,892 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8041]
+2018-11-22 21:50:51,893 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4239]
+2018-11-22 21:50:51,893 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/1960]
+2018-11-22 21:50:51,893 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7614]
+2018-11-22 21:50:51,894 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4970]
+2018-11-22 21:50:51,894 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/8344]
+2018-11-22 21:50:51,894 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3817]
+2018-11-22 21:50:51,894 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/4551]
+2018-11-22 21:50:51,895 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7500]
+2018-11-22 21:50:51,895 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6096]
+2018-11-22 21:50:51,895 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3386]
+2018-11-22 21:50:51,895 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6059]
+2018-11-22 21:50:51,895 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2178]
+2018-11-22 21:50:51,896 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6862]
+2018-11-22 21:50:51,896 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7643]
+2018-11-22 21:50:51,896 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3245]
+2018-11-22 21:50:51,896 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2498]
+2018-11-22 21:50:51,897 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6485]
+2018-11-22 21:50:51,897 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6428]
+2018-11-22 21:50:51,897 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3024]
+2018-11-22 21:50:51,897 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7590]
+2018-11-22 21:50:51,898 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3934]
+2018-11-22 21:50:51,898 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/3911]
+2018-11-22 21:50:51,898 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6187]
+2018-11-22 21:50:51,898 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/5358]
+2018-11-22 21:50:51,899 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/9739]
+2018-11-22 21:50:51,899 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6067]
+2018-11-22 21:50:51,899 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2138]
+2018-11-22 21:50:51,899 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/2742]
+2018-11-22 21:50:51,900 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/7212]
+2018-11-22 21:50:51,900 [ERROR] [IMC-tse        ] DEPTH-tse: Subscription rejected on VariableDepth[tse/6279]
+2018-11-22 21:50:51,900 [INFO ] [IMC-tse        ] DEPTH-tse: Turning off WARN and ERROR logs on this logger (got 100 in 45ms, min delay = 1000ms)
+2018-11-22 21:50:51,923 [ERROR] [socket listener] DefaultConnectable: null (imc:quanthouse): Disconnected by exchange.: Unknown error
+2018-11-22 21:50:51,924 [ERROR] [socket listener] CONNECTION-asx: asx (imc:quanthouse): ConnectionException: Connection lost on asx: Disconnected by exchange. (error=0)
+Disconnected by exchange. (error=0)
+2018-11-22 21:50:52,095 [ERROR] [socket listener] DefaultConnectable: null (imc:quanthouse): Disconnected by exchange.: Unknown error
+2018-11-22 21:50:52,095 [ERROR] [socket listener] CONNECTION-tse: tse (imc:quanthouse): ConnectionException: Connection lost on tse: Disconnected by exchange. (error=0)
+Disconnected by exchange. (error=0)
+2018-11-22 21:50:56,877 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:50:57,068 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:01,868 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:02,060 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:06,859 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:07,052 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:11,852 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:12,044 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:16,845 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:17,036 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:21,835 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:22,028 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:26,828 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:27,020 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:31,820 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:32,012 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:36,812 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:37,003 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:41,804 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:41,995 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:46,796 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:46,987 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:51,788 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:51,979 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:51:56,844 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:51:57,035 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:01,836 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:02,028 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:06,828 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:07,020 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:11,821 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:12,012 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:16,811 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:17,004 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:21,804 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:21,996 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:26,796 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:26,987 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:31,788 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:31,979 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:36,780 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:36,971 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:52:41,772 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:52:41,963 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:54:37,135 [ERROR] [socket listener] MBLHandler: Subscription cancelled for MBL Subscription at 2018/11/22-21:52:46.971: RC_NORMAL_DISCONNECT
+2018-11-22 21:54:37,769 [ERROR] [socket listener] DefaultConnectable: null (imc:quanthouse): Disconnected by exchange.: Unknown error
+2018-11-22 21:54:37,769 [ERROR] [socket listener] CONNECTION-asx: asx (imc:quanthouse): ConnectionException: Connection lost on asx: Disconnected by exchange. (error=0)
+Disconnected by exchange. (error=0)
+2018-11-22 21:54:37,973 [ERROR] [socket listener] DefaultConnectable: null (imc:quanthouse): Disconnected by exchange.: Unknown error
+2018-11-22 21:54:37,973 [ERROR] [socket listener] CONNECTION-tse: tse (imc:quanthouse): ConnectionException: Connection lost on tse: Disconnected by exchange. (error=0)
+Disconnected by exchange. (error=0)
+2018-11-22 21:54:42,732 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:54:42,923 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:54:47,724 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:54:47,915 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:54:52,717 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:54:52,908 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:54:57,708 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:54:57,899 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:02,700 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:02,892 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:07,692 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:07,884 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:12,683 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:12,876 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:17,676 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:17,868 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:22,668 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:22,860 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:27,660 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:27,851 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:32,652 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:32,843 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:37,644 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:37,835 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:42,700 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:42,891 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:47,692 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:47,883 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:52,685 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:52,875 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:55:57,676 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:55:57,868 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 21:56:02,669 [ERROR] [Connection[asx]] CONNECTION-asx: asx (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_01: RC_ERROR
+2018-11-22 21:56:02,860 [ERROR] [Connection[tse]] CONNECTION-tse: tse (imc:quanthouse): QHException: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+com.ingalys.imc.quanthouse.QHException: drv=QuantHouse FeedOS API: Cannot connect to 172.16.112.204:6041 as alize_02: RC_ERROR
+2018-11-22 22:03:29,443 [ERROR] [IMC-asx        ] MBOHandler: VariableDepth[asx/TRS]: Could not insert market sheet entry [7067615680547430289 0.0@2.7 ] at level 155 on side BUY
+2018-11-22 22:03:29,445 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 156, Size: 155
+2018-11-22 22:51:46,920 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 159, Size: 155
+2018-11-22 22:54:35,336 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 1: should be less than 1
+2018-11-22 23:06:06,344 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 4
+2018-11-22 23:06:51,696 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 4
+2018-11-22 23:08:04,267 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 6
+2018-11-22 23:08:05,993 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 161, Size: 157
+2018-11-22 23:09:07,261 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 0: should be less than 0
+2018-11-22 23:09:08,231 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 159: should be less than 155
+2018-11-22 23:09:08,231 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 3: should be less than 1
+2018-11-22 23:09:12,974 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 4: should be less than 2
+2018-11-22 23:09:13,113 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 2
+2018-11-22 23:09:13,354 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 2
+2018-11-22 23:09:14,998 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 158: should be less than 154
+2018-11-22 23:09:15,213 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 2
+2018-11-22 23:09:16,404 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 2
+2018-11-22 23:09:27,297 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 8: should be less than 2
+2018-11-22 23:09:27,297 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 2
+2018-11-22 23:10:55,408 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 6
+2018-11-22 23:11:11,048 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 5
+2018-11-22 23:11:31,393 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 11: should be less than 7
+2018-11-22 23:11:41,785 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 8
+2018-11-22 23:11:41,785 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 8
+2018-11-22 23:11:41,942 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 8
+2018-11-22 23:11:41,942 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 12, Size: 8
+2018-11-22 23:11:48,639 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 9
+2018-11-22 23:19:10,231 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 6
+2018-11-22 23:20:54,673 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 5
+2018-11-22 23:21:14,534 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 4
+2018-11-22 23:22:07,723 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 5: should be less than 5
+2018-11-22 23:23:40,480 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 3: should be less than 2
+2018-11-22 23:23:40,480 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 5, Size: 2
+2018-11-22 23:24:01,395 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 3, Size: 2
+2018-11-22 23:24:10,461 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 2
+2018-11-22 23:24:10,461 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 4, Size: 2
+2018-11-22 23:24:10,461 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 2
+2018-11-22 23:24:40,516 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 5: should be less than 3
+2018-11-22 23:24:40,517 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 3
+2018-11-22 23:24:45,468 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 5, Size: 3
+2018-11-22 23:24:50,523 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 3
+2018-11-22 23:25:00,176 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 3
+2018-11-22 23:25:10,185 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 3
+2018-11-22 23:25:18,020 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 3
+2018-11-22 23:25:56,633 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 6
+2018-11-22 23:26:10,501 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 6
+2018-11-22 23:26:10,658 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 6
+2018-11-22 23:26:10,658 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 6
+2018-11-22 23:29:03,918 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 5
+2018-11-22 23:36:16,353 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 12, Size: 9
+2018-11-22 23:38:01,692 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 5
+2018-11-22 23:38:15,355 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 4
+2018-11-22 23:38:19,776 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 5: should be less than 4
+2018-11-22 23:38:19,776 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 3
+2018-11-22 23:38:37,766 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 7, Size: 4
+2018-11-22 23:38:52,451 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 4
+2018-11-22 23:39:53,730 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 5: should be less than 4
+2018-11-22 23:39:53,731 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 4
+2018-11-22 23:39:53,731 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 3
+2018-11-22 23:41:49,584 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 3
+2018-11-22 23:42:59,405 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 3
+2018-11-22 23:43:26,353 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 4
+2018-11-22 23:44:56,838 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 172: should be less than 153
+2018-11-22 23:46:08,312 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 7, Size: 4
+2018-11-22 23:48:15,543 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 4
+2018-11-22 23:50:17,956 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 11: should be less than 4
+2018-11-23 00:03:48,657 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 5
+2018-11-23 00:03:48,657 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 5
+2018-11-23 00:04:04,718 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 4
+2018-11-23 00:04:04,719 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 3
+2018-11-23 00:04:35,094 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 5
+2018-11-23 00:04:52,349 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 5
+2018-11-23 00:05:32,987 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 6
+2018-11-23 00:05:32,987 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 12, Size: 6
+2018-11-23 00:10:12,023 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 16: should be less than 8
+2018-11-23 00:10:12,023 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 8
+2018-11-23 00:16:19,295 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 20, Size: 10
+2018-11-23 00:16:29,358 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 44: should be less than 10
+2018-11-23 00:17:49,139 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 18, Size: 10
+2018-11-23 00:17:50,080 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 10
+2018-11-23 00:18:08,027 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 19: should be less than 8
+2018-11-23 00:18:14,738 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 8
+2018-11-23 00:20:24,536 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 17, Size: 8
+2018-11-23 00:22:12,988 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 18, Size: 6
+2018-11-23 00:22:19,683 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 6
+2018-11-23 00:22:19,683 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 6
+2018-11-23 00:22:19,683 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 11: should be less than 6
+2018-11-23 00:22:19,683 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 20, Size: 6
+2018-11-23 00:22:30,235 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 6
+2018-11-23 00:23:17,205 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 6
+2018-11-23 00:25:24,167 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 6
+2018-11-23 00:32:37,266 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 18: should be less than 9
+2018-11-23 00:32:40,467 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 9
+2018-11-23 00:32:42,193 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 9
+2018-11-23 00:32:50,246 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 19: should be less than 9
+2018-11-23 00:32:50,246 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 21: should be less than 10
+2018-11-23 00:32:50,246 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 17, Size: 10
+2018-11-23 00:51:21,067 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 20, Size: 10
+2018-11-23 00:56:36,097 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 18, Size: 10
+2018-11-23 01:10:59,084 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 22: should be less than 11
+2018-11-23 01:10:59,084 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 20, Size: 11
+2018-11-23 01:12:22,299 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 19: should be less than 10
+2018-11-23 01:12:28,309 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 18: should be less than 10
+2018-11-23 01:12:57,954 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 11
+2018-11-23 01:18:13,133 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 11
+2018-11-23 01:22:23,154 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 11
+2018-11-23 01:30:25,483 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 162: should be less than 155
+2018-11-23 01:31:01,388 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 8
+2018-11-23 01:31:53,234 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 20, Size: 10
+2018-11-23 01:41:22,784 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 21: should be less than 11
+2018-11-23 01:41:22,784 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 11
+2018-11-23 01:42:24,341 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 23, Size: 11
+2018-11-23 01:44:16,307 [ERROR] [IMC-asx        ] MBOHandler: VariableDepth[asx/RBL]: Could not insert new market sheet entry [7068400731851623814 0.0@1.4 ] at level 13 on side 2
+2018-11-23 01:46:56,208 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 10
+2018-11-23 01:58:54,747 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 18: should be less than 11
+2018-11-23 02:19:25,828 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 17, Size: 8
+2018-11-23 02:41:59,764 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 8
+2018-11-23 02:41:59,765 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 8
+2018-11-23 02:44:27,104 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 8
+2018-11-23 02:54:30,122 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 3
+2018-11-23 02:55:18,624 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 0
+2018-11-23 02:55:18,624 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 7, Size: 0
+2018-11-23 02:55:18,780 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 0
+2018-11-23 02:55:18,780 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 0
+2018-11-23 02:55:23,528 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 0
+2018-11-23 02:55:25,815 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 1
+2018-11-23 02:55:27,751 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 1
+2018-11-23 02:55:27,751 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 1
+2018-11-23 02:55:36,492 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 2
+2018-11-23 02:55:50,288 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 5, Size: 0
+2018-11-23 02:56:08,325 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 23, Size: 0
+2018-11-23 02:57:21,461 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 8, Size: 0
+2018-11-23 02:57:36,622 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 0
+2018-11-23 02:57:36,622 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 16, Size: 0
+2018-11-23 02:59:06,620 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 16: should be less than 0
+2018-11-23 02:59:06,620 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 0
+2018-11-23 02:59:23,771 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 6, Size: 0
+2018-11-23 02:59:23,771 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 7, Size: 0
+2018-11-23 02:59:36,733 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 0
+2018-11-23 02:59:36,733 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 0
+2018-11-23 02:59:37,361 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 0
+2018-11-23 02:59:51,099 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 14, Size: 0
+2018-11-23 02:59:51,412 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 7, Size: 0
+2018-11-23 03:04:26,615 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 2
+2018-11-23 03:04:26,615 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 8: should be less than 2
+2018-11-23 03:04:28,981 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 1
+2018-11-23 03:04:43,247 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 1
+2018-11-23 03:05:25,730 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 2
+2018-11-23 03:06:37,662 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 6: should be less than 2
+2018-11-23 03:12:03,184 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 3
+2018-11-23 03:12:03,184 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 14, Size: 3
+2018-11-23 03:12:03,184 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 3
+2018-11-23 03:12:03,184 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 3
+2018-11-23 03:19:03,080 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 5
+2018-11-23 03:19:03,080 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 4
+2018-11-23 03:19:22,532 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 9, Size: 5
+2018-11-23 03:19:40,475 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 6
+2018-11-23 03:23:20,111 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 6
+2018-11-23 03:31:23,635 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 12, Size: 6
+2018-11-23 03:33:53,672 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 6
+2018-11-23 03:33:53,672 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 5
+2018-11-23 03:33:53,828 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 6
+2018-11-23 03:34:53,755 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 27: should be less than 5
+2018-11-23 03:34:53,912 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 5
+2018-11-23 03:36:15,280 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 13: should be less than 4
+2018-11-23 03:36:21,454 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 4
+2018-11-23 03:36:28,782 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 163: should be less than 154
+2018-11-23 03:36:38,509 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 5
+2018-11-23 03:36:38,666 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 5
+2018-11-23 03:36:38,666 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 5
+2018-11-23 03:36:42,745 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 6
+2018-11-23 03:37:02,900 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 6
+2018-11-23 03:37:02,900 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 6
+2018-11-23 03:37:37,435 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 7
+2018-11-23 03:37:51,654 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 16, Size: 7
+2018-11-23 03:45:05,724 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 19, Size: 7
+2018-11-23 03:47:09,182 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 7
+2018-11-23 03:53:35,367 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 9
+2018-11-23 03:53:35,367 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 15: should be less than 8
+2018-11-23 03:54:05,837 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 10
+2018-11-23 04:04:22,422 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 19: should be less than 10
+2018-11-23 04:04:22,422 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 46, Size: 10
+2018-11-23 04:08:44,053 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 14: should be less than 9
+2018-11-23 04:09:18,194 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 16, Size: 11
+2018-11-23 04:17:41,677 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 10
+2018-11-23 04:25:44,226 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 10: should be less than 5
+2018-11-23 04:26:20,046 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 8
+2018-11-23 04:26:32,754 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 15, Size: 8
+2018-11-23 04:29:38,918 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 7
+2018-11-23 04:29:38,918 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 6
+2018-11-23 04:29:38,918 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 10, Size: 5
+2018-11-23 04:30:08,040 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 13, Size: 7
+2018-11-23 04:32:21,974 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 11: should be less than 6
+2018-11-23 04:40:06,460 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 9: should be less than 4
+2018-11-23 04:50:19,816 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 23, Size: 6
+2018-11-23 04:50:27,185 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 23: should be less than 6
+2018-11-23 04:58:05,992 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 40, Size: 4
+2018-11-23 05:00:19,397 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 11, Size: 2
+2018-11-23 05:00:22,321 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IndexOutOfBoundsException: Index: 12, Size: 2
+2018-11-23 05:15:03,156 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 3
+2018-11-23 05:15:03,156 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 12: should be less than 3
+2018-11-23 05:17:35,343 [ERROR] [IMC-asx        ] MBOHandler: Book(AU000000RBL2@XASX) buy=[Order[id=7068004907666304972 BUY 3200 @ 1.24 nb=1 priority=0], Order[id=7068400731853954713 BUY 2079 @ 1.24 nb=1 priority=0], Order[id=7068400731851101888 BUY 1000 @ 1.235 nb=1 priority=0], Order[id=7068400731853966857 BUY 2079 @ 1.235 nb=1 priority=0], Order[id=7068004907663623807 BUY 4000 @ 1.23 nb=1 priority=0], Order[id=7068400731853978424 BUY 2079 @ 1.23 nb=1 priority=0], Order[id=7068400731853986009 BUY 2079 @ 1.225 nb=1 priority=0], Order[id=7067615680547801088 BUY 5698 @ 1.22 nb=1 priority=0], Order[id=7067615680551644517 BUY 820 @ 1.22 nb=1 priority=0], Order[id=7058389678481611101 BUY 488 @ 1.21 nb=1 priority=0], Order[id=7067615680549474778 BUY 3000 @ 1.21 nb=1 priority=0], Order[id=7068400731851469473 BUY 3900 @ 1.205 nb=1 priority=0], Order[id=7068400731852868064 BUY 4200 @ 1.205 nb=1 priority=0], Order[id=7067615680548821063 BUY 5100 @ 1.2 nb=1 priority=0], Order[id=7068400731851288883 BUY 100000 @ 1.2 nb=1 priority=0], Order[id=7068400731851420863 BUY 5000 @ 1.2 nb=1 priority=0], Order[id=7068400731851436679 BUY 460 @ 1.2 nb=1 priority=0], Order[id=7068400731852055759 BUY 417 @ 1.2 nb=1 priority=0], Order[id=7068400731853566085 BUY 800 @ 1.2 nb=1 priority=0], Order[id=7067615680553019465 BUY 450 @ 1.18 nb=1 priority=0], Order[id=7067615680549767542 BUY 500 @ 1.15 nb=1 priority=0], Order[id=7067615680551620858 BUY 8695 @ 1.15 nb=1 priority=0], Order[id=7067615680551534933 BUY 2000 @ 1.125 nb=1 priority=0], Order[id=7067615680549870167 BUY 9000 @ 1.105 nb=1 priority=0]] sell=[Order[id=7068400731853954722 SELL 2079 @ 1.28 nb=1 priority=0], Order[id=7068400731853966865 SELL 2079 @ 1.285 nb=1 priority=0], Order[id=7068400731849657691 SELL 1500 @ 1.29 nb=1 priority=0], Order[id=7068400731853978432 SELL 2079 @ 1.29 nb=1 priority=0], Order[id=7068400731853986219 SELL 2079 @ 1.295 nb=1 priority=0], Order[id=7068400731852245697 SELL 16933 @ 1.3 nb=1 priority=0], Order[id=7068004907664163369 SELL 11280 @ 1.33 nb=1 priority=0], Order[id=7068004907664131201 SELL 1300 @ 1.34 nb=1 priority=0], Order[id=7067615680547407829 SELL 4000 @ 1.38 nb=1 priority=0], Order[id=7067615680548943082 SELL 11100 @ 1.395 nb=1 priority=0], Order[id=7060086499799282528 SELL 30000 @ 1.4 nb=1 priority=0], Order[id=7066701711506777936 SELL 4500 @ 1.45 nb=1 priority=0], Order[id=7066701711506777935 SELL 4500 @ 1.45 nb=1 priority=0], Order[id=7065234138366903494 SELL 5300 @ 1.46 nb=1 priority=0], Order[id=7067213259291599786 SELL 5000 @ 1.475 nb=1 priority=0], Order[id=7064835840275610400 SELL 10000 @ 1.48 nb=1 priority=0], Order[id=7064440016088718461 SELL 20000 @ 1.5 nb=1 priority=0], Order[id=7066701711506779170 SELL 600 @ 1.5 nb=1 priority=0], Order[id=7060086499803956645 SELL 1782 @ 1.5 nb=1 priority=0], Order[id=7065234138364042081 SELL 2200 @ 1.52 nb=1 priority=0], Order[id=7064835840274493695 SELL 10000 @ 1.54 nb=1 priority=0], Order[id=7062856444468097470 SELL 1000 @ 1.56 nb=1 priority=0], Order[id=7063930942208232204 SELL 8000 @ 1.56 nb=1 priority=0], Order[id=7063930942209797019 SELL 2200 @ 1.56 nb=1 priority=0], Order[id=7062064246339301655 SELL 10000 @ 1.6 nb=1 priority=0], Order[id=7064440016094097486 SELL 337 @ 1.6 nb=1 priority=0], Order[id=7064835840277779460 SELL 2500 @ 1.62 nb=1 priority=0], Order[id=7058389678478880947 SELL 20000 @ 1.625 nb=1 priority=0], Order[id=7066701711506817689 SELL 4000 @ 1.64 nb=1 priority=0], Order[id=7061668971908541544 SELL 4500 @ 1.65 nb=1 priority=0], Order[id=7060086499800836145 SELL 594 @ 1.67 nb=1 priority=0], Order[id=7058389678479292256 SELL 8600 @ 1.7 nb=1 priority=0], Order[id=7064440016093126958 SELL 600 @ 1.73 nb=1 priority=0], Order[id=7058389678481775687 SELL 1084 @ 1.77 nb=1 priority=0], Order[id=7063930942204779600 SELL 3500 @ 1.795 nb=1 priority=0], Order[id=7065632161570928082 SELL 750 @ 1.8 nb=1 priority=0], Order[id=7058389678478699038 SELL 5000 @ 1.89 nb=1 priority=0], Order[id=7058389678479419470 SELL 3500 @ 2.0 nb=1 priority=0]]: Could not delete market sheet line at level 11 on side 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 236: should be less than 153
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 3: should be less than 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 3: should be less than 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 7: should be less than 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 17: should be less than 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 18: should be less than 2
+2018-11-23 07:50:03,118 [ERROR] [IMC-asx        ] EventQueue: Error while dispatching event:java.lang.IllegalArgumentException: Invalid level 31: should be less than 2
+2018-11-23 08:46:41,466 [ERROR] [IMC-asx        ] StreamAdapter: Subscription failed for DefaultRequest[SUBSCRIBE TICKER data=AU000000EHL7@XASX login=null Session[stream-proxy-all/9I]]: java.util.NoSuchElementException: No attribute 'instrumentCode' in element 'Unresolved[AU000000EHL7@XASX]'
+2018-11-23 08:46:41,467 [WARN ] [IMC-asx        ] StreamHandler: Subscription to TICKER on AU000000EHL7@XASX failed for user stream-proxy-all/9I: Internal error: java.util.NoSuchElementException: No attribute 'instrumentCode' in element 'Unresolved[AU000000EHL7@XASX]'
+2018-11-23 08:46:41,491 [ERROR] [IMC-asx        ] StreamAdapter: Subscription failed for DefaultRequest[SUBSCRIBE TICKER data=AU000000BGL5@XASX login=null Session[stream-proxy-all/9I]]: java.util.NoSuchElementException: No attribute 'instrumentCode' in element 'Unresolved[AU000000BGL5@XASX]'
+2018-11-23 08:46:41,491 [WARN ] [IMC-asx        ] StreamHandler: Subscription to TICKER on AU000000BGL5@XASX failed for user stream-proxy-all/9I: Internal error: java.util.NoSuchElementException: No attribute 'instrumentCode' in element 'Unresolved[AU000000BGL5@XASX]'
