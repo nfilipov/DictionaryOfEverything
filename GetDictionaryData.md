@@ -4,7 +4,7 @@
 
 my goal is to take the input file (a csv file looking like this):
 
-'''csv
+'''bash
 E000A1X3X33
 GB00BD6GN030
 DE000A11QW50
