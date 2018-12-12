@@ -43,7 +43,18 @@ In this module is a ReadInput function that will form the list:
 def ReadInput(myInputFile=None):
     inputFile = PrintInput(myInputFile)
     content = [line.rstrip('\n') for line in open(inputFile)]
-    print "the list of",len(content),"ISINs is: ",content
+    content2 =[]
+    for word in content:
+        if "@" in word:
+            word = word[:-5]
+        content2.append(word)
+
+    if any("@" in word for word in content2):
+        print "ho!"
+
+    print "the list of",len(content2),"ISINs is: ",content2
+    return content2
+
 ```
 
 Indeed the ```with``` statement in python can be dangerous in big data as it could cause a MemoryError. better use a for loop in these instances.
@@ -51,3 +62,16 @@ Indeed the ```with``` statement in python can be dangerous in big data as it cou
 I've added a check for mic presence... that's not perfect, because it simply drops the MIC if was given, but this is probably enough for this exercise.
 
 # read the dictionary files and parse their data into lists.
+
+This one will have some xml in it. First we get to where the dict files are located.
+
+This requires scanning the folders to skip the wrong ones and get only to the proper driver-dicts.
+
+We'll once again rely on the powers of XML ElementTree python libs.
+
+a getroot.attrib does the following:
+
+```
+{'mainIndex': 'instrumentCode', 'name': 'Dictionary', 'lotSize': '1'} # driver-dicts
+{'mainIndex': 'uniqueId', 'capId': '328f4677', 'mddId': 'FUNCTION=2ee000', 'name': 'Dictionary'} # hmm-dicts
+```
