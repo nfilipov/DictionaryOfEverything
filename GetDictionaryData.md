@@ -2,7 +2,7 @@
 
 ## Read Input File
 
-my goal is to take the input file (a csv file looking like this):
+My goal is to take the input file (a csv file looking like this):
 
 ```bash
 E000A1X3X33
@@ -27,3 +27,27 @@ FR0000120404
 GB00BDFXHW57
 IT0004056880
 ```
+
+We want to turn that list into a python readable list of ISIN. 
+We also want to strip MICs if they exist.
+We know that some ISIN will have multiple matches in the dictionary, but this is not a reason to sweat for now.
+
+I defined a module modulereadinputfile that reads the input file argument in the main script (the first argument) and feeds it to python to make a list.
+
+In this module is a ReadInput function that will form the list:
+
+```python
+
+# open the input file and make it a Python List
+
+def ReadInput(myInputFile=None):
+    inputFile = PrintInput(myInputFile)
+    content = [line.rstrip('\n') for line in open(inputFile)]
+    print "the list of",len(content),"ISINs is: ",content
+```
+
+Indeed the ```with``` statement in python can be dangerous in big data as it could cause a MemoryError. better use a for loop in these instances.
+
+I've added a check for mic presence... that's not perfect, because it simply drops the MIC if was given, but this is probably enough for this exercise.
+
+# read the dictionary files and parse their data into lists.
