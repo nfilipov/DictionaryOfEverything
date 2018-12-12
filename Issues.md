@@ -1,6 +1,6 @@
 # Issues on markets today
 
-### Nov 23 2018
+### Nov 23 2018 (UAT)
 
 #### ASX - no MBO
 
