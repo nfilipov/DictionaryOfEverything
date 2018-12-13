@@ -64,14 +64,21 @@ I've added a check for mic presence... that's not perfect, because it simply dro
 # read the dictionary files and parse their data into lists.
 
 This one will have some xml in it. First we get to where the dict files are located.
-
 This requires scanning the folders to skip the wrong ones and get only to the proper driver-dicts.
-
 We'll once again rely on the powers of XML ElementTree python libs.
 
-a getroot.attrib does the following:
+For now, we settle for the following tools:
 
-```
-{'mainIndex': 'instrumentCode', 'name': 'Dictionary', 'lotSize': '1'} # driver-dicts
-{'mainIndex': 'uniqueId', 'capId': '328f4677', 'mddId': 'FUNCTION=2ee000', 'name': 'Dictionary'} # hmm-dicts
+```python
+
+	# this will print the mic of any instrument matching with the if statement.
+   print [child.get('mic') for child in root.findall('.//mic/*[@isin]') if child.get('uniqueId') == "GB00BFM6RT85@XLON"]
+
+    # this will print a list of pairs (uniqueId,mic) for every instrument in file where the MIC field is different from the mic used in making the uniqueId:
+   print  [(child.get('uniqueId'),child.get('mic')) for child  in root.findall('.//mic/*[@isin]') if child.get('mic') != \
+child.get('uniqueId')[-4:]]
+
+    # output for this last command on qh-quantfeed-europe
+  [('FO0000000179@ONSE', 'FNSE'), ('NO0003080608@ONSE', 'FNSE'), ('NO0003035305@ONSE', 'FNSE'), ('NO0010199052@ONSE', 'FNSE'), ('CY0102630916@ONSE', 'FNSE'), ('NO0003679102@ONSE', 'FNSE'), ('NO0010360266@ONSE', 'FNSE'), ('NO0003399917@ONSE', 'FNSE'), ('BMG671801022@ONSE', 'FNSE'), ('SG1AD2000008@ONSE', 'FNSE'), ('CY0101550917@ONSE', 'FNSE'), ('KYG813131011@ONSE', 'FNSE'), ('SE0006091997@XSTO', 'FNSE'), ('SE0008347660@XSTO', 'FNSE'), ('NO0010657448@ONSE', 'FNSE'), ('NO0010694029@ONSE', 'FNSE'), ('NO0010576010@ONSE', 'FNSE'), ('NO0010283211@ONSE', 'FNSE'), ('DK0060477263@ONSE', 'FNSE'), ('NO0010564701@ONSE', 'FNSE'), ('NO0010776875@ONSE', 'FNSE'), ('SE0002367797@XSTO', 'FNSE'), ('NO0003064107@ONSE', 'FNSE'), ('NO0010716418@ONSE', 'FNSE'), ('NO0010317340@ONSE', 'FNSE'), ('NO0010014632@ONSE', 'FNSE'), ('SE0005992831@XSTO', 'FNSE'), ('SE0007730650@XSTO', 'FNSE'), ('SE0001105511@XSTO', 'FNSE'), ('NO0010571680@ONSE', 'FNSE'), ('NO0003095309@ONSE', 'FNSE'), ('NO0010792625@ONSE', 'FNSE'), ('NO0010671068@ONSE', 'FNSE'), ('SE0005003654@XSTO', 'FNSE'), ('NO0010466022@ONSE', 'FNSE'), ('NO0010289200@ONSE', 'FNSE'), ('NO0003043309@ONSE', 'FNSE'), ('NO0010629108@ONSE', 'FNSE'), ('DK0060945467@ONSE', 'FNSE'), ('NO0010593544@ONSE', 'FNSE'), ('BMG1466R1088@ONSE', 'FNSE'), ('NO0010734338@ONSE', 'FNSE'), ('NO0003070609@ONSE', 'FNSE'), ('SE0007100342@XSTO', 'FNSE'), ('NO0010778095@ONSE', 'FNSE'), ('NO0010743545@ONSE', 'FNSE'), ('NO0003096208@ONSE', 'FNSE'), ('NO0003117202@ONSE', 'FNSE'), ('NO0003025009@ONSE', 'FNSE'), ('SE0000188518@XSTO', 'FNSE'), ('NO0010360175@ONSE', 'FNSE'), ('NO0010571698@ONSE', 'FNSE'), ('SE0006543344@XSTO', 'FNSE'), ('SE0007158928@XSTO', 'FNSE'), ('NO0010001118@ONSE', 'FNSE'), ('NO0010397581@ONSE', 'FNSE'), ('NO0004913609@ONSE', 'FNSE'), ('MT0001000109@XSTO', 'FNSE'), ('SE0008091904@XSTO', 'FNSE'), ('CY0101162119@ONSE', 'FNSE'), ('NO0010789506@ONSE', 'FNSE'), ('SE0006143129@XSTO', 'FNSE'), ('SE0009160872@XSTO', 'FNSE'), ('CA46016U1084@XSTO', 'FNSE'), ('NO0010284318@ONSE', 'FNSE'), ('NO0010739402@ONSE', 'FNSE'), ('NO0010159684@ONSE', 'FNSE'), ('SE0003366871@ONSE', 'FNSE'), ('NO0004895103@ONSE', 'FNSE'), ('DK0060520450@ONSE', 'FNSE'), ('NO0010763550@ONSE', 'FNSE'), ('NO0010257728@ONSE', 'FNSE'), ('NO0010650013@ONSE', 'FNSE'), ('NO0010299068@ONSE', 'FNSE'), ('NO0003079709@ONSE', 'FNSE'), ('SE0007074505@XSTO', 'FNSE'), ('SE0007277876@XSTO', 'FNSE'), ('NO0010550056@ONSE', 'FNSE'), ('NO0010429145@ONSE', 'FNSE'), ('NO0003572802@ONSE', 'FNSE'), ('NO0010781206@ONSE', 'FNSE'), ('SE0006826046@XSTO', 'FNSE'), ('NO0010808892@ONSE', 'FNSE'), ('FO000A0DN9X4@ONSE', 'FNSE'), ('NO0010598683@ONSE', 'FNSE'), ('NO0003055808@ONSE', 'FNSE'), ('NO0010209331@ONSE', 'FNSE'), ('NO0003399909@ONSE', 'FNSE'), ('SE0004840718@XSTO', 'FNSE'), ('NO0003078107@ONSE', 'FNSE'), ('NO0010715394@ONSE', 'FNSE'), ('NO0010387004@ONSE', 'FNSE'), ('NO0010379779@ONSE', 'FNSE'), ('NO0003103103@ONSE', 'FNSE')]
+
 ```
