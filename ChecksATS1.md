@@ -35,8 +35,7 @@ function addAttributes(el) {
                 //Override uniqueId configuration for Quanthouse connection INGALI-92
             if ((isin != null) && (mic != 'XTKS') && (mic != 'XEUR'))
             {
-                if ( (operatingmic == 'XSTO') || (operatingmic == 'FNSE') || (operatingmic == 'XHEL') || (operatingmic == 'XSAT') || (operatingmic == 'XCSE') || (operatingmic == 'XOSL') || (operatingmic == 'XPAR') || (operatingmic == 'A\
-LXP') || (operatingmic == 'XMLI') )
+                if ( (operatingmic == 'XSTO') || (operatingmic == 'FNSE') || (operatingmic == 'XHEL') || (operatingmic == 'XSAT') || (operatingmic == 'XCSE') || (operatingmic == 'XOSL') || (operatingmic == 'XPAR') || (operatingmic == 'ALXP') || (operatingmic == 'XMLI') )
                 { // If we are on NOMX or EURONEXT and there is an operating MIC: we use the available segmentMIC
                     if ( (segmentmic == '') || (segmentmic ==null) )
                     {// if the SegmentMIC is not available or not assigned: use operatingMIC
