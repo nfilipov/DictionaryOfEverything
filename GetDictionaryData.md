@@ -114,6 +114,20 @@ The main program only knows the list of IMS : qh-europe, asia, and consolidated,
 4 the stocks are looped through:
 in hmm-dict, we find all the matches for this isin.
 
-## this is not fast.
+## this is not fast, not made for more than 100 stocks
 
 At the moment we have a list of N stocks. each stock is compared to nearly 10 dictionaries, dictionaries have up to 100k stocks. so the loop time is extremely long.
+
+## XWBO case
+```javascript
+            else if ((isin != null) && (mic == 'XWBO')){
+                var segmentMic = el.getAttribute('segmentMic');
+                if ((segmentMic != null) || segmentMic != ''){
+                    el.setString('uniqueId',isin+'@'+segmentMic);
+                }
+                else {
+                    el.setString('uniqueId',isin+'@'+operatingMic);
+                }
+            }
+```
+			
