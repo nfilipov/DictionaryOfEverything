@@ -59,3 +59,14 @@ function declareAttributes(meta) {
 
 }
 ```
+
+## The checks
+
+We want that stocks with non-problematic IDs (i.e. the ones on which we can already send orders) are not affected.
+
+For all stocks in stock visu, we print the current couple (mic,fosmarketid,operatingmic,segmentmic).
+
+These stocks are available in Common/Nicolas/Dictionnaire/checksATS1 as stocks.xlsx
+
+These checks highlighted the need for a better output. -> class? modulewriteoutput? other? to be developed later.
+We also want to apply some sort of filter per exchange: 1. to avoid reading all the dictionaries, and 2. to avoid duplicates across dictionaries (e.g. the same stock trading on three different markets)
